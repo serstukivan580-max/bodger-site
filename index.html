@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BODGER Sportswear</title>
+<meta name="description" content="BODGER — спортивний одяг для боксу та боротьби. Made in Ukraine, Хмельницький.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="BODGER — Born to fight">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--t:#1f1e1c;--t7:rgba(31,30,28,.7);--t5:rgba(31,30,28,.5);--d:#161514;--f:#121212;--cr:#f5f3ee;--line:#ebe9e4;--soft:#f5f5f3;--red:#c8202f;--green:#2f6b3a;--pink:#ef8fb0;--sh:rgba(20,20,20,.24);--hd:'Oswald',Impact,'Arial Narrow Bold',sans-serif;--e:cubic-bezier(.22,.61,.36,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--t);font-family:'Montserrat',Arial,sans-serif;font-size:14px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+h1,h2,h3,h4,p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;border-radius:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--t);outline-offset:2px}
+[hidden]{display:none!important}
+.g{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1440px;margin:0 auto}
+.pv{background:var(--soft);color:var(--t5);text-align:center;font-size:11px;padding-block:6px}
+.hdr{position:sticky;top:0;z-index:50;background:#fff;transition:box-shadow .3s}
+.hdr.sc{box-shadow:0 1px 0 var(--line)}
+.hdr .in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:76px;max-width:1440px;margin:0 auto}
+.nav{display:flex;gap:28px}
+.nav a{color:var(--t7);white-space:nowrap;transition:color .2s}
+.nav a:hover{color:var(--t)}
+.logo{display:flex;align-items:center;gap:6px;font-family:var(--hd);font-weight:700;font-size:26px;line-height:1;letter-spacing:.01em}
+.logo svg{width:30px;height:30px}
+.right{justify-self:end;display:flex;align-items:center;gap:22px}
+.right a{color:var(--t7)}
+.right a:hover{color:var(--t)}
+.cbtn{display:flex;align-items:center;gap:8px}
+.cbtn svg{width:20px;height:20px}
+.cbtn b{min-width:20px;height:20px;border-radius:10px;padding:0 6px;display:grid;place-items:center;background:var(--t);color:#fff;font-size:11px;font-weight:600}
+.cbtn.has b{background:var(--red)}
+.hero{position:relative;height:min(84vh,760px);min-height:480px;overflow:hidden;background:#111}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 35%;filter:grayscale(1) contrast(1.08);animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.12) translateX(-1.5%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,.78) 100%)}
+.hcap{position:absolute;left:0;right:0;bottom:56px;z-index:2;display:grid;justify-items:center;gap:14px;text-align:center;color:#fff;padding-inline:16px;animation:rise 1.2s .2s var(--e) both}
+@keyframes rise{from{transform:translateY(24px)}}
+.hcap small{font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.hcap h1{font-weight:800;font-size:clamp(34px,5.6vw,62px);line-height:1.02;text-transform:uppercase;letter-spacing:.01em}
+.hcap h1 span{color:var(--red)}
+.hcap p{font-size:15px;font-weight:500;color:rgba(255,255,255,.85)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 30px;background:var(--d);color:#fff;font-size:14px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;transition:background .25s,color .25s}
+.btn:hover{background:var(--red)}
+.btn.lt{background:#fff;color:var(--t)}
+.btn.lt:hover{background:var(--red);color:#fff}
+.btn.ol{background:transparent;color:var(--t);box-shadow:inset 0 0 0 1px var(--t)}
+.btn.ol:hover{background:var(--t);color:#fff}
+.full{width:100%}
+.credit{position:absolute;right:12px;bottom:10px;z-index:2;font-size:10px;color:rgba(255,255,255,.55)}
+.credit a{text-decoration:underline}
+.sec{padding-block:72px;scroll-margin-top:76px}
+.sh{display:flex;justify-content:space-between;align-items:baseline;gap:12px 24px;flex-wrap:wrap;margin-bottom:36px}
+.sh h2{font-size:clamp(22px,2.4vw,30px);font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+.tabs{display:flex;gap:22px;flex-wrap:wrap}
+.chip{color:var(--t7);padding-bottom:3px;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.chip:hover{color:var(--t)}
+.chip.on{color:var(--t);border-color:var(--t)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 12px}
+.card{display:block;text-align:left;min-width:0}
+.ph{position:relative;display:block;aspect-ratio:4/5}
+.ph svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .9s var(--e)}
+.card:hover .ph svg{transform:scale(1.05) translateY(-6px)}
+.new{position:absolute;top:6px;left:0;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.meta{display:block;padding-top:6px}
+.nm{display:block;line-height:1.35}
+.pc{display:block;margin-top:4px;font-weight:600;font-variant-numeric:tabular-nums}
+.more{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:56px}
+.lb2{position:relative;min-height:min(70vh,620px);display:grid;place-items:center;overflow:hidden;color:#fff;text-align:center;background:#111}
+.lb2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 40%;transform:scale(1.35);filter:grayscale(1) contrast(1.15)}
+.lb2::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.6)}
+.lb2 .in{position:relative;z-index:1;display:grid;justify-items:center;gap:14px;padding-block:64px}
+.lb2 h2{font-family:var(--hd);font-weight:700;font-size:clamp(56px,11vw,150px);line-height:.92;text-transform:uppercase;letter-spacing:.01em}
+.lb2 h2 span{display:block;color:transparent;-webkit-text-stroke:1.5px #fff}
+.lb2 p{max-width:44ch;color:rgba(255,255,255,.82);font-size:15px}
+.wf{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.wf input{width:min(100%,300px);height:48px;padding:0 14px;border:0;border-radius:0;background:rgba(255,255,255,.95);font:inherit;font-size:16px;color:var(--t)}
+.wf input:focus{outline:2px solid #fff;outline-offset:2px}
+.about{padding-block:88px;text-align:center}
+.about h2{font-size:clamp(22px,2.4vw,30px);font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:18px}
+.about p{max-width:62ch;margin:0 auto;font-size:16px;line-height:1.75;color:var(--t7)}
+.badge{display:flex;justify-content:center;margin-bottom:22px}
+.badge svg{width:84px;height:84px}
+.facts{display:flex;justify-content:center;gap:16px 44px;flex-wrap:wrap;margin-top:44px}
+.facts b{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.facts span{font-size:13px;color:var(--t7)}
+.ft{background:var(--f);color:rgba(245,243,238,.6);font-size:12px}
+.ft .in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px;min-height:71px;padding-block:16px;max-width:1440px;margin:0 auto}
+.ft b{font-family:var(--hd);font-weight:700;font-size:22px;color:var(--cr)}
+.ft nav{display:flex;gap:22px;flex-wrap:wrap}
+.ft a:hover{color:var(--cr)}
+.ov{position:fixed;inset:0;z-index:90;background:rgba(18,18,18,.5);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.ov.on{opacity:1;visibility:visible}
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:12px;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.modal.on{opacity:1;visibility:visible}
+.mp{position:relative;width:100%;max-width:1040px;max-height:calc(100svh - 24px);overflow-y:auto;background:#fff;transform:translateY(24px);transition:transform .4s var(--e)}
+.modal.on .mp{transform:none}
+.x{position:absolute;top:8px;right:8px;z-index:3;width:44px;height:44px;font-size:26px;font-weight:300;line-height:1;background:#fff}
+.x:hover{color:var(--red)}
+.mb{display:grid}
+.mb>.ph{background:var(--soft)}
+.md{display:flex;flex-direction:column;gap:18px;padding:24px 20px 28px;min-width:0}
+.md h3{font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.15;text-transform:uppercase;padding-right:44px}
+.mpr{font-size:20px;font-weight:600}
+.ds{color:var(--t7);font-size:15px}
+.lb{font-size:13px;font-weight:600;margin-bottom:10px}
+.sz{display:flex;gap:8px;flex-wrap:wrap}
+.sz button{width:56px;height:46px;font-weight:500;box-shadow:inset 0 0 0 1px var(--line)}
+.sz button:hover{box-shadow:inset 0 0 0 1px var(--t)}
+.sz button.on{background:var(--t);color:#fff;box-shadow:none}
+.err{min-height:20px;margin-top:6px;color:var(--red);font-size:13px}
+.md details{border-top:1px solid var(--line)}
+.md details:last-of-type{border-bottom:1px solid var(--line)}
+.md summary{display:flex;justify-content:space-between;padding-block:14px;font-weight:600;list-style:none;cursor:pointer}
+.md summary::-webkit-details-marker{display:none}
+.md summary::after{content:"+";font-weight:400;font-size:18px;line-height:1}
+.md details[open] summary::after{content:"−"}
+.md details>div,.md details>p{padding-bottom:16px;color:var(--t7);overflow-x:auto}
+.chart{width:100%;border-collapse:collapse;text-align:center;font-size:13px}
+.chart th,.chart td{border-bottom:1px solid var(--line);padding:8px 4px}
+.chart th:first-child,.chart td:first-child{text-align:left}
+.dmline{font-size:13px;color:var(--t7);text-align:center}
+.dmline a{color:var(--t);text-decoration:underline}
+.dr{position:fixed;top:0;right:0;bottom:0;z-index:100;width:min(440px,100%);display:flex;flex-direction:column;background:#fff;transform:translateX(102%);transition:transform .45s var(--e)}
+.dr.on{transform:none}
+.dh{flex:none;display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 12px 0 20px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.dh .x{position:static}
+.db{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:0 20px 28px}
+.ci{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:14px;align-items:start;padding-block:16px;border-bottom:1px solid var(--line)}
+.th{position:relative;aspect-ratio:4/5;background:var(--soft)}
+.th svg{position:absolute;inset:0;width:100%;height:100%}
+.ci h4{font-size:14px;font-weight:600}
+.sm{font-size:13px;color:var(--t7)}
+.qty{display:inline-flex;align-items:center;margin-top:10px;box-shadow:inset 0 0 0 1px var(--line)}
+.qty button{width:34px;height:34px;font-size:16px}
+.qty span{min-width:24px;text-align:center;font-size:13px}
+.cr{display:flex;flex-direction:column;align-items:flex-end;gap:2px;font-weight:600}
+.del{margin-top:10px;font-size:12px;font-weight:400;color:var(--t5);text-decoration:underline}
+.emp{display:grid;justify-items:center;gap:14px;padding-block:72px;text-align:center}
+.emp b{font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.tot{display:grid;gap:4px;padding-block:16px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.tot div{display:flex;justify-content:space-between;color:var(--t7)}
+.tot .sum{color:var(--t);font-size:18px;font-weight:700;padding-top:8px}
+.of h4{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:4px 0 12px}
+.fl{display:grid;gap:6px;margin-bottom:12px}
+.fl span{font-size:13px;font-weight:500}
+.fl input{width:100%;height:48px;padding:0 14px;border:0;border-radius:0;box-shadow:inset 0 0 0 1px var(--line);font:inherit;font-size:16px;color:var(--t);background:#fff;-webkit-appearance:none;appearance:none}
+.fl input:focus{outline:none;box-shadow:inset 0 0 0 1px var(--t)}
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+.pay label{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 12px;box-shadow:inset 0 0 0 1px var(--line);font-size:13px;cursor:pointer}
+.pay label:has(:checked){box-shadow:inset 0 0 0 1px var(--t)}
+.pay input{accent-color:var(--t)}
+.note{margin-top:12px;font-size:12px;color:var(--t5)}
+.ok{padding-block:32px}
+.ok h4{font-size:24px;font-weight:800;text-transform:uppercase;margin:6px 0 12px}
+.ok>p{color:var(--t7)}
+.rc{margin:18px 0;border-top:1px solid var(--line)}
+.rc p{display:flex;justify-content:space-between;gap:12px;padding-block:10px;border-bottom:1px solid var(--line)}
+.rc span:first-child{color:var(--t7)}
+.rc span:last-child{text-align:right;font-weight:500;overflow-wrap:anywhere}
+.toast{position:fixed;left:50%;bottom:24px;z-index:200;max-width:calc(100% - 32px);padding:14px 20px;background:var(--d);color:#fff;font-size:13px;font-weight:500;transform:translate(-50%,calc(100% + 60px));visibility:hidden;transition:visibility .3s,transform .35s var(--e)}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+@media (max-width:719px){.nav a:not(:first-child){display:none}.right a{display:none}.logo{font-size:22px}.logo svg{width:26px;height:26px}.hcap{bottom:40px}.credit{top:10px;bottom:auto}}
+@media (min-width:720px){.g{padding-left:max(45px,env(safe-area-inset-left,0px));padding-right:max(45px,env(safe-area-inset-right,0px))}.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 24px}.mb{grid-template-columns:1.1fr 1fr}.mb>.ph{position:sticky;top:0;align-self:start}.md{padding:44px 36px}.sec{padding-block:96px}}
+@media (max-width:1023px){.nav{gap:20px}.nav a:nth-child(3){display:none}}
+@media (min-width:1200px){.hdr .in{height:91px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<filter id="blur" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="5"/></filter>
+<symbol id="crest" viewBox="0 0 40 40"><g fill="#2f6b3a"><ellipse cx="7" cy="27" rx="2.2" ry="4" transform="rotate(-35 7 27)"/><ellipse cx="5" cy="20" rx="2" ry="3.8" transform="rotate(-10 5 20)"/><ellipse cx="6" cy="13" rx="1.8" ry="3.4" transform="rotate(20 6 13)"/><ellipse cx="33" cy="27" rx="2.2" ry="4" transform="rotate(35 33 27)"/><ellipse cx="35" cy="20" rx="2" ry="3.8" transform="rotate(10 35 20)"/><ellipse cx="34" cy="13" rx="1.8" ry="3.4" transform="rotate(-20 34 13)"/><path d="M12 33Q20 38 28 33" fill="none" stroke="#2f6b3a" stroke-width="1.6"/></g><path d="M14 11C14 7 18 6 21 6C26 6 28 9 28 13V20C28 24 25 27 21 27H16C13.5 27 12 25.5 12 23V18C12 16 13 15 14 15Z" fill="#c8202f"/><path d="M14 15C17 15 18 17 18 19" fill="none" stroke="#7d1019" stroke-width="1.2"/><rect x="13" y="26" width="13" height="5" rx="1" fill="#e9e6df"/></symbol>
+</defs></svg>
+
+<div class="pv">Макет сайту для погодження · замовлення не приймаються</div>
+<header class="hdr" id="hdr"><div class="in g">
+<nav class="nav" aria-label="Розділи"><a href="#shop">Каталог</a><a href="#ngu">Never give up</a><a href="#about">Про нас</a></nav>
+<a href="#top" class="logo" aria-label="BODGER — на головну">BODGER<svg aria-hidden="true"><use href="#crest"/></svg></a>
+<div class="right"><a href="https://instagram.com/bodger.sport" target="_blank" rel="noopener">Instagram</a><button class="cbtn" id="cartBtn" aria-label="Відкрити кошик"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><b id="cnt">0</b></button></div>
+</div></header>
+
+<main id="top">
+<section class="hero" aria-label="Born to fight">
+<img src="img/hero.jpg" alt="Боксер у стійці, чорно-біле фото" fetchpriority="high">
+<div class="hcap">
+<small>Sportswear store · Made in Ukraine</small>
+<h1>Born to <span>fight</span></h1>
+<p>Футболки, худі, штани та шорти для залу і вулиці</p>
+<a href="#shop" class="btn lt">Дивитись каталог</a>
+</div>
+<span class="credit">Фото: <a href="https://unsplash.com/photos/LXDWcn5vWKU" target="_blank" rel="noopener">Metin Ozer / Unsplash</a></span>
+</section>
+
+<section class="sec g" id="shop"><div class="wrap">
+<div class="sh"><h2>Асортимент</h2><div class="tabs" id="tabs" role="group" aria-label="Тип одягу"></div></div>
+<div class="grid" id="grid"></div>
+<div class="more"><a class="btn" href="https://instagram.com/bodger.sport" target="_blank" rel="noopener">Замовити в Instagram &gt;&gt;&gt;</a><a class="btn ol" href="https://t.me/+0nZV9UJLdqYwZDky" target="_blank" rel="noopener">Telegram-канал</a></div>
+</div></section>
+
+<section class="lb2" id="ngu">
+<img src="img/hero.jpg" alt="" loading="lazy">
+<div class="in g">
+<h2>Never<span>give up</span></h2>
+<p>Нові моделі виходять невеликими партіями. Залиш нік в Instagram — напишемо першим.</p>
+<form class="wf" id="wf"><label for="w-ig" style="position:absolute;left:-9999px">Нік в Instagram</label><input id="w-ig" name="ig" placeholder="@твій.нік" required><button class="btn lt" type="submit">Хочу першим</button></form>
+</div>
+</section>
+
+<section class="about g" id="about"><div class="wrap">
+<div class="badge"><svg aria-hidden="true"><use href="#crest"/></svg></div>
+<h2>BODGER</h2>
+<p>Спортивний одяг для боксу, боротьби і щоденних тренувань. Шиємо в Україні, у Хмельницькому: щільна бавовна, оверсайз-крій і речі, які витримують і зал, і вулицю.</p>
+<div class="facts">
+<div><b>Made in Ukraine</b><span>Хмельницький</span></div>
+<div><b>Доставка</b><span>Нова Пошта, 1–2 дні</span></div>
+<div><b>Обмін</b><span>14 днів</span></div>
+<div><b>Замовлення</b><span>Сайт, Instagram або Telegram</span></div>
+</div>
+</div></section>
+</main>
+
+<footer class="ft g"><div class="in">
+<b>BODGER</b>
+<nav aria-label="Футер"><a href="https://instagram.com/bodger.sport" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/+0nZV9UJLdqYwZDky" target="_blank" rel="noopener">Telegram</a><a href="#shop">Каталог</a></nav>
+<span>Макет сайту · дизайн і розробка — Ivan</span>
+</div></footer>
+
+<div class="ov" id="ov"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Товар"><div class="mp"><button class="x" data-close aria-label="Закрити">×</button><div class="mb" id="mb"></div></div></div>
+<aside class="dr" id="dr" aria-label="Кошик">
+<div class="dh"><h3>Кошик (<span id="dc">0</span>)</h3><button class="x" data-close aria-label="Закрити">×</button></div>
+<div class="db">
+<div id="cv">
+<div id="items"></div>
+<div class="tot" id="tot"></div>
+<form class="of" id="of">
+<h4>Доставка Новою Поштою</h4>
+<label class="fl"><span>Ім’я та прізвище</span><input id="f-name" name="name" type="text" required autocomplete="name"></label>
+<label class="fl"><span>Телефон</span><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+380" pattern="\+?[0-9 ]{10,16}" title="Наприклад: +380 67 123 45 67"></label>
+<label class="fl"><span>Instagram або Telegram (необов’язково)</span><input id="f-ig" name="ig" type="text" placeholder="@нік"></label>
+<label class="fl"><span>Місто</span><input id="f-city" name="city" type="text" required list="cities"></label>
+<label class="fl"><span>Відділення або поштомат №</span><input id="f-np" name="np" type="text" required inputmode="numeric"></label>
+<h4>Оплата</h4>
+<div class="pay"><label><input id="f-card" type="radio" name="pay" value="card" checked>Карткою онлайн</label><label><input id="f-cod" type="radio" name="pay" value="cod">Накладений платіж</label></div>
+<button class="btn full" type="submit">Оформити замовлення</button>
+<p class="note">Це макет: дані з форми нікуди не надсилаються.</p>
+</form>
+</div>
+<div id="okv" hidden></div>
+</div>
+</aside>
+<datalist id="cities"><option value="Хмельницький"><option value="Київ"><option value="Львів"><option value="Вінниця"><option value="Тернопіль"><option value="Житомир"><option value="Харків"><option value="Одеса"><option value="Дніпро"></datalist>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const SH={
+te:'M78 16Q100 28 122 16L160 26L194 70L166 92L152 76L154 204H46L48 76L34 92L6 70L40 26Z',
+hd:'M74 24Q100 36 126 24L156 32Q178 42 184 84L194 178L170 182L154 98V204H46V98L30 182L6 178L16 84Q22 42 44 32Z',
+pt:'M58 10H142L148 44L154 196Q154 204 146 206H118Q112 206 111 198L102 74H98L89 198Q88 206 82 206H54Q46 204 46 196L52 44Z',
+sh:'M46 40H154L166 160Q166 166 160 166H116Q110 166 109 160L101 96H99L91 160Q90 166 84 166H40Q34 166 34 160Z'};
+const P=[
+{id:1,n:'Classic Logo Tee — чорна',t:'te',c:'k',pr:1100,v:'chest',d:'Маленька рукавиця в лавровому вінку на грудях. Оверсайз, щільна бавовна.'},
+{id:2,n:'Never Give Up Hoodie — чорне',t:'hd',c:'k',pr:2200,v:'stack',nw:1,d:'BODGER тричі на спині і напис Never give up. Худі з начосом.'},
+{id:3,n:'Born To Fight Tee — чорна',t:'te',c:'k',pr:1150,v:'born',nw:1,d:'Рожевий блок Born to fight. Street based. Fight night.'},
+{id:4,n:'Classic Logo Tee — біла',t:'te',c:'w',pr:1100,v:'chest',d:'Біла футболка з маленьким логотипом на грудях.'},
+{id:5,n:'Sweatpants — сірі',t:'pt',c:'g',pr:1800,v:'pants',d:'Вільні штани з манжетами і вишитим BODGER на стегні.'},
+{id:6,n:'Fight Shorts — чорні',t:'sh',c:'k',pr:1200,v:'shorts',d:'Довгі шорти з логотипом BODGER sports fighting company.'}];
+const TY={te:'Футболка',hd:'Худі',pt:'Штани',sh:'Шорти'},SZ=['S','M','L','XL'];
+const CH={te:[['Ширина',58,61,64,67],['Довжина',72,74,76,78],['Рукав',23,24,25,26]],hd:[['Ширина',62,65,68,71],['Довжина',70,72,74,76],['Рукав',60,61,62,63]],pt:[['Талія',36,38,40,42],['Довжина',100,102,104,106],['Стегно',32,33,34,35]],sh:[['Талія',36,38,40,42],['Довжина',56,58,60,62],['Стегно',34,35,36,37]]};
+const TABS=[['all','Усе'],['te','Футболки'],['hd','Худі'],['pt','Штани'],['sh','Шорти']];
+let tab='all',cart=[],cur=null,mS=null,tt;
+const byId=id=>P.find(p=>p.id===id),fmt=n=>n.toLocaleString('uk-UA')+' ₴';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const OS="'Oswald',sans-serif",MO="'Montserrat',sans-serif";
+function print(p,ink){
+if(p.v==='chest')return `<use href="#crest" x="16" y="-44" width="14" height="14"/>`;
+if(p.v==='stack')return [-18,0,18].map(y=>`<text y="${y}" font-family="${OS}" font-weight="700" font-size="21" text-anchor="middle" letter-spacing="1">BODGER</text>`).join('')+`<text y="32" font-family="${MO}" font-weight="700" font-size="5.4" letter-spacing="2.4" text-anchor="middle">NEVER GIVE UP</text>`;
+if(p.v==='born')return `<g transform="rotate(-24)"><rect x="-34" y="-30" width="68" height="44" rx="4" fill="#ef8fb0"/><text y="-12" font-family="${OS}" font-weight="700" font-size="12" text-anchor="middle" fill="#1f1e1c">BORN TO FIGHT.</text><text y="2" font-family="${OS}" font-weight="700" font-size="9" text-anchor="middle" fill="#1f1e1c">STREET BASED</text><text y="27" font-family="${OS}" font-weight="700" font-size="8" text-anchor="middle" letter-spacing="1">FIGHT NIGHT</text></g>`;
+if(p.v==='pants')return `<text x="-30" y="-50" font-family="${OS}" font-weight="700" font-size="8" text-anchor="middle" transform="rotate(-6)">BODGER</text>`;
+return `<use href="#crest" x="22" y="0" width="12" height="12"/><text x="30" y="24" font-family="${OS}" font-weight="700" font-size="11" text-anchor="middle">BODGER</text><text x="30" y="31" font-family="${MO}" font-weight="700" font-size="3" letter-spacing=".6" text-anchor="middle">SPORTS FIGHTING COMPANY</text>`;
+}
+function art(p,cls=''){
+const C={k:['#1a1a1b','#1a1a1b','#3a3a3c','#f2f2f0'],w:['#f8f8f6','#d6d4cf','#dfddd8','#1a1a1b'],g:['#bdbdbb','#a9a9a6','#9c9c99','#1a1a1b']}[p.c],[f,s,l,ink]=C;
+const L=d=>`<path d="${d}" fill="none" style="stroke:${l}" stroke-width="1.2" stroke-linecap="round"/>`;
+let o=`<ellipse cx="100" cy="${p.t==='sh'?178:218}" rx="78" ry="6" style="fill:var(--sh)" filter="url(#blur)"/><path d="${SH[p.t]}" style="fill:${f};stroke:${s}" stroke-width="1" stroke-linejoin="round"/>`;
+if(p.t==='hd')o+=L('M46 190H154M7 166L32 170M193 166L168 170')+`<path d="M66 34C64 8 136 8 134 34C128 60 112 68 100 68C88 68 72 60 66 34Z" style="fill:${f};stroke:${l}" stroke-width="1.2"/>`;
+else if(p.t==='te')o+=L('M84 22Q100 32 116 22');
+else if(p.t==='pt')o+=L('M54 22H146M47 190H90M110 190H153M92 22V40M108 22V40');
+else o+=L('M47 52H153M96 52V66M104 52V66');
+o+=`<g transform="translate(100 ${p.t==='hd'?126:p.t==='te'?112:p.t==='pt'?100:84})" style="fill:${ink}">${print(p,ink)}</g>`;
+return `<svg class="${cls}" viewBox="-24 -30 248 310" role="img" aria-label="${p.n}">${o}</svg>`;
+}
+const card=p=>`<button class="card" data-open="${p.id}"><span class="ph">${art(p)}${p.nw?'<span class="new">New</span>':''}</span><span class="meta"><span class="nm">${p.n}</span><span class="pc">${fmt(p.pr)}</span></span></button>`;
+const chart=t=>`<table class="chart"><thead><tr><th>см</th>${SZ.map(s=>`<th>${s}</th>`).join('')}</tr></thead><tbody>${CH[t].map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+$('#tabs').innerHTML=TABS.map(([v,n])=>`<button class="chip${v==='all'?' on':''}" data-v="${v}" aria-pressed="${v==='all'}">${n}</button>`).join('');
+function render(){$('#grid').innerHTML=P.filter(p=>tab==='all'||p.t===tab).map(card).join('')}
+const tot=()=>cart.reduce((a,i)=>{a.n+=i.q;a.s+=byId(i.id).pr*i.q;return a},{n:0,s:0});
+function upd(){
+const t=tot();
+$('#cnt').textContent=t.n;$('#dc').textContent=t.n;$('#cartBtn').classList.toggle('has',t.n>0);
+$('#items').innerHTML=cart.length?cart.map((i,x)=>{const p=byId(i.id);return `<div class="ci"><div class="th">${art(p)}</div><div><h4>${p.n}</h4><p class="sm">${TY[p.t]} · ${i.size}</p><div class="qty"><button data-q="-1" data-i="${x}" aria-label="Менше">−</button><span>${i.q}</span><button data-q="1" data-i="${x}" aria-label="Більше">+</button></div></div><div class="cr">${fmt(p.pr*i.q)}<button class="del" data-d="${x}">Видалити</button></div></div>`}).join(''):'<div class="emp"><b>Кошик порожній</b><p class="sm">Обери щось в асортименті</p><button class="btn ol" data-go>До каталогу</button></div>';
+$('#tot').innerHTML=`<div><span>Доставка</span><span>за тарифами НП</span></div><div class="sum"><span>Разом</span><span>${fmt(t.s)}</span></div>`;
+$('#tot').hidden=$('#of').hidden=!cart.length;
+}
+function toast(m){const e=$('#toast');e.textContent=m;e.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('on'),2600)}
+function add(id,s){const it=cart.find(i=>i.id===id&&i.size===s);it?it.q++:cart.push({id,size:s,q:1});upd();toast(`Додано в кошик, розмір ${s}`)}
+function closeAll(){$$('.modal,.dr,.ov').forEach(x=>x.classList.remove('on'));document.body.classList.remove('lock')}
+function openL(el){closeAll();el.classList.add('on');$('#ov').classList.add('on');document.body.classList.add('lock');el.querySelector('.x').focus({preventScroll:true})}
+function openCart(){$('#cv').hidden=false;$('#okv').hidden=true;openL($('#dr'))}
+function openM(id){
+const p=cur=byId(id);mS=null;
+$('#mb').innerHTML=`<div class="ph">${art(p)}</div><div class="md"><p class="sm">${TY[p.t]} · Made in Ukraine</p><h3>${p.n}</h3><p class="mpr">${fmt(p.pr)}</p><p class="ds">${p.d}</p><div><p class="lb">Розмір</p><div class="sz">${SZ.map(s=>`<button data-s="${s}">${s}</button>`).join('')}</div><p class="err" id="merr"></p></div><button class="btn full" id="madd">Додати в кошик</button><p class="dmline">або напиши нам в <a href="https://instagram.com/bodger.sport" target="_blank" rel="noopener">Instagram @bodger.sport</a></p><div><details><summary>Таблиця розмірів, см</summary><div>${chart(p.t)}</div></details><details><summary>Склад і догляд</summary><p>${p.t==='hd'||p.t==='pt'?'Тринитка з начосом, 320 г/м²':'100% бавовна, 220 г/м²'}. Прання при 30°, навиворіт, без відбілювачів.</p></details><details><summary>Доставка і обмін</summary><p>Нова Пошта по Україні, 1–2 дні. Обмін протягом 14 днів.</p></details></div></div>`;
+$('#modal .mp').scrollTop=0;openL($('#modal'));
+}
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;tab=b.dataset.v;$$('.chip').forEach(x=>{x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});render()});
+$('#grid').addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o)openM(+o.dataset.open)});
+$('#mb').addEventListener('click',e=>{
+const s=e.target.closest('[data-s]');
+if(s){mS=s.dataset.s;$$('#mb [data-s]').forEach(b=>b.classList.toggle('on',b===s));$('#merr').textContent='';$('#madd').textContent='Додати в кошик · '+mS;return}
+if(e.target.closest('#madd')){if(!mS){$('#merr').textContent='Обери розмір';return}add(cur.id,mS);closeAll()}
+});
+$('#cartBtn').addEventListener('click',openCart);
+$('#dr').addEventListener('click',e=>{
+const b=e.target.closest('button');if(!b)return;const d=b.dataset;
+if(d.q){const i=cart[+d.i];i.q+=+d.q;if(i.q<1)cart.splice(+d.i,1);upd()}
+else if(d.d!==undefined){cart.splice(+d.d,1);upd()}
+else if('go' in d||'done' in d){closeAll();$('#shop').scrollIntoView({behavior:'smooth'})}
+});
+$('#of').addEventListener('submit',e=>{
+e.preventDefault();if(!cart.length)return;
+const f=new FormData(e.target),t=tot(),c=f.get('pay')==='card',no='BD-'+(Math.floor(Math.random()*9e4)+1e4);
+$('#okv').innerHTML=`<div class="ok"><p class="sm">Замовлення ${no}</p><h4>Дякуємо!</h4><p>${c?'Посилання на оплату надішлемо в SMS.':'Оплата при отриманні у відділенні.'} Менеджер напише або зателефонує, щоб підтвердити.</p><div class="rc"><p><span>Ім’я</span><span>${esc(f.get('name'))}</span></p><p><span>Телефон</span><span>${esc(f.get('phone'))}</span></p><p><span>Нова Пошта</span><span>${esc(f.get('city'))}, №${esc(f.get('np'))}</span></p><p><span>Оплата</span><span>${c?'Карткою онлайн':'Накладений платіж'}</span></p><p><span>Разом, ${t.n} шт</span><span>${fmt(t.s)}</span></p></div><button class="btn full" data-done>Продовжити</button></div>`;
+cart=[];upd();e.target.reset();$('#cv').hidden=true;$('#okv').hidden=false;$('.db').scrollTop=0;
+});
+$('#wf').addEventListener('submit',e=>{e.preventDefault();const v=e.target.ig.value.trim();e.target.reset();toast(`Готово! Напишемо ${v.startsWith('@')?v:'@'+v}, щойно вийдуть нові моделі`)});
+document.addEventListener('click',e=>{if(e.target.closest('[data-close]')||e.target.id==='modal'||e.target.id==='ov')closeAll()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll()});
+addEventListener('scroll',()=>$('#hdr').classList.toggle('sc',scrollY>4),{passive:true});
+render();upd();document.fonts.load("700 20px 'Oswald'").then(render);
+</script>
+</body>
+</html>
